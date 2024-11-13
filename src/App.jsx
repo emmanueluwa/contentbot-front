@@ -1,6 +1,8 @@
 import { useState } from "react";
 import logo from "./assets/megaphone.png";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 const App = () => {
   const [projectDescription, setProjectDescription] = useState("");
   const [projectTweet, setProjectTweet] = useState("");
@@ -12,7 +14,7 @@ const App = () => {
   };
 
   const generateTweet = async () => {
-    const response = await fetch("http://localhost:8000/api/generate", {
+    const response = await fetch(`${API_BASE_URL}/api/generate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
