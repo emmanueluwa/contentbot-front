@@ -30,7 +30,7 @@ const App = () => {
           <div className="flex flex-col items-center space-y-4">
             <img src={logo} alt="Megaphone logo" className="w-8 h-8" />
             <h1 className="text-3xl font-bold text-gray-900">
-              Generate Twitter Post with AI
+              Generate Content For Your Project With AI
             </h1>
           </div>
 
